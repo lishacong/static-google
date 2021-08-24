@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div.top {
+                height: 48;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                box-sizing: border-box;
+                margin-left: auto;
+                padding:0 4px 0 32px;
+            }
+            a.top1 {
+                text-decoration:none;
+                font-family: arial, serif;
+                font-size: 13px;
+                color:rgba(0,0,0,0.87);
+                padding-right:15px;
+            }
+            a.top1:hover {
+                text-decoration:underline;
+            }
+            a.top2 {
+                font-size:14px;
+                font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+                background-color:#1A73E8;
+                color:white;
+                text-decoration:none;
+                border:1px solid transparent;
+                padding-top: 9px;
+                padding-right: 23px;
+                padding-bottom: 9px;
+                padding-left: 23px;
+                border-radius: 4px;
+                letter-spacing: 0.25px;
+                height: 16px;
+                width:48px;
+                margin-left:8px;
+                margin-right:8px;
+            }
+            a.top2:hover {
+                box-shadow:0px,0px,20px,
+            }
+            .dots {
+                width: 18px;
+                display: flex;
+                flex-wrap: wrap;
+                cursor: pointer;
+                margin-right:8px;
+                margin-left:8px;
+            }
+            .dot {
+                width: 0;
+                height: 0;
+                border: 2px solid gray;
+                border-radius: 2px;
+                margin: 0 2px 2px 0;
+                cursor: pointer;
+
+            }
+            div.google {
+                flex-direction: column;
+                display: flex;
+                min-height: 92px;
+                max-height: 290px;
+                height: calc(100% - 560px);
+                box-sizing: border-box;
+                align-items: center;
+                
+            }
+            img.img1 {
+                height: 92px;
+                width: 272px;
+                margin-top:auto;
+                margin-left:auto;
+                margin-right:auto;
+                justify-content: center;
+                align-items: center;
+            }
+            div.middle{
+                max-height: 160px;
+                padding:20px;
+                box-sizing: border-box;
+            }
+            div.middle1 {
+                width:auto;
+                padding-top:6px;
+                margin:0 auto;
+                min-width: 358px;
+                flex-direction: column;
+                width: auto;
+                max-width: 584px;
+            }
+            div.input {
+                height: 44px;
+                border: 1px solid #dfe1e5;
+                border-radius:24px;
+                display:flex;
+                width:582px;
+                margin-top: 0px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            div.input1 {
+                display:flex;
+                padding:5px 8px 0 14px;
+            }
+            div.search {
+                display:flex;
+                align-items: center;
+                padding-right: 3px;
+                margin-top: 0px;
+            }
+            img.img2 {
+                width:30px;
+                height: 30px;
+            }
+            div.text {
+                display:flex;
+                height: 34px;
+                flex:1;
+            }
+            input.text {
+                flex:1;
+                margin-right: 30px;
+                display:flex;
+                border:none;
+                outline: none;
+                padding:0;
+                border:0;
+                margin-top:5px;
+                height:34px;
+                font-size:16px;
+                font-family: arial,sans-serif;
+            }
+            div.button {
+                width:auto;
+                height: 70px;
+                padding-top: 18px;
+            }
+            .gsearch {
+                padding:0 16px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                margin:16px 4px;
+                border:1px solid #f8f9fa;
+                font-size:14px;
+                background-color: #f8f9fa;
+                min-width: 54px;
+                color: #3c4043;
+                border-radius: 4px;
+                height: 36px;
+                margin-top:11px;
+            }
+            .offer {
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+            .offer0 {
+                text-align: center;
+                font-size: small;
+                font-family: arial,sans-serif;
+                color: #3c4043;
+                line-height: 28px;
+            }
+            a.offer1 {
+                color: #1a0dab;
+                text-decoration: none;
+                cursor:pointer;
+                padding:0 3px;
+            }
+            a.offer1:hover {
+                text-decoration: underline;
+            }
+            .Bottom {
+                flex-shrink: 0;
+                background:#f2f2f2;
+            }
+            .area {
+                padding:15px 30px;
+                border-bottom: 1px solid #dadce0;
+                font-size: 15px;
+                color: rgba(0,0,0,.54);
+                font-family: arial,sans-serif;
+            }
+            .Bottom0 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding:0 20px;
+            }
+            .left, .right {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .left1 {
+                padding:15px;
+                font-size:14px;
+                text-decoration: none;
+                color: #70757a;
+                font-family: arial,sans-serif;
+            }
+            .left1:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body style="margin:0;">
+        <div style ="display:flex;flex-direction: column;height: 100%;">
+            <div style="display:flex;padding:6px;height: 48px;">
+                <div class="top">
+                    <a class="top1" href="https://www.google.com/intl/zh-CN/gmail/about/#" target="_blank">Gmail</a>
+                    <a class="top1" href="https://www.google.com.hk/imghp?hl=en&ogbl" target="_blank">Images</a>
+                    <div class="dots" title="Google apps">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <a class="top2" href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">Sign in</a>
+                </div>
+            </div>
+            <div class="google">
+                <img class="img1" src="google.png">
+            </div>
+            <div class="middle">
+                <div class="middle1">
+                    <div class="input">
+                        <div class="input1">
+                            <div class="search"> <img class="img2" src="search.png" > </div>
+                        </div>
+                        <div class="text"> 
+                            <input class="text" type="text" max_length="2048"> </input>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <center>
+                            <input class="gsearch" value="Google Search" type="submit">
+                            <input class="gsearch" value="I'm Feeling Lucky" type="submit">
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="offer0">
+                    <div class="offer1">
+                        Google offered in:
+                        <a class="offer1" href="https://www.google.com/setprefs?sig=0_MqtzX1_6X1UVTWHtJ8pWzPniH88%3D&hl=zh-TW&source=homepage&sa=X&ved=0ahUKEwjMlrPzsLXyAhWgy4sBHQhGAUEQ2ZgBCA4" target="_blank">中文（繁體）</a>
+                        <a class="offer1" href="https://www.google.com/setprefs?sig=0_MqtzX1_6X1UVTWHtJ8pWzPniH88%3D&hl=zh-CN&source=homepage&sa=X&ved=0ahUKEwjMlrPzsLXyAhWgy4sBHQhGAUEQ2ZgBCA8" target="_blank">中文(简体)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Bottom">
+                <div class="area">Hong Kong</div>
+                <div class="Bottom0">
+                    <div class="left">
+                        <a class="left1" href="https://about.google/?utm_source=google-HK&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank">About</a>
+                        <a class="left1" href="https://www.google.com/intl/en_hk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"target="_blank">Advertising</a>
+                        <a class="left1" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank">Business</a>
+                        <a class="left1" href="https://google.com/search/howsearchworks/?fg=1" target="_blank">How Search works</a>
+                    </div>
+                    <div class="right">
+                        <a class="left1" href="https://policies.google.com/privacy?hl=en-HK&fg=1" target="_blank">Privacy</a>
+                        <a class="left1" href="https://policies.google.com/terms?hl=en-HK&fg=1" target="_blank">Terms</a>
+                        <a class="left1" >Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
